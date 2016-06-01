@@ -1,0 +1,25 @@
+Library
+  signature VARIABLE
+  signature OPERATOR
+
+  signature ABT
+  signature ABT_UTIL
+
+  structure Arity
+  functor Abt
+  functor AbtUtil
+  functor Variable
+  structure StringVariable
+is
+  src/variable.sig
+  src/operator.sig
+  src/arity.sml
+
+  src/abt.sig
+  src/abt_util.sig
+  src/abt.fun
+  src/abt_util.fun
+  src/variable.fun
+
+  $/basis.cm
+  vector-lib/vector-lib.cm

@@ -1,0 +1,24 @@
+$(SML_LIB)/basis/basis.mlb
+vector-lib/vector-lib.mlb
+local
+  src/arity.sml
+  src/variable.sig
+  src/operator.sig
+  src/abt.sig
+  src/abt_util.sig
+  src/abt.fun
+  src/abt_util.fun
+  src/variable.fun
+in
+  signature VARIABLE
+  signature OPERATOR
+
+  signature ABT
+  signature ABT_UTIL
+
+  structure Arity
+  functor Abt
+  functor AbtUtil
+  functor Variable
+  structure StringVariable
+end
